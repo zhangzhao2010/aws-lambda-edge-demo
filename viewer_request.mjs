@@ -16,8 +16,8 @@ export const handler = async (event) => {
             // 解析原始路径
             const pathParts = uri.split('/');
 
-            if (pathParts.length > 0) {
-                pathParts[0] = pathParts[0] + '-resizer';
+            if (pathParts.length > 1) {
+                pathParts[1] = pathParts[1] + '-resizer';
             }
 
             const fileName = pathParts.pop();
